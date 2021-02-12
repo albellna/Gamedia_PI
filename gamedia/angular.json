@@ -134,5 +134,8 @@
       }
     }
   },
-  "defaultProject": "gamedia"
+  "defaultProject": "gamedia",
+  "cli": {
+    "analytics": "a553c42c-078f-4f56-aa06-1efa4130be47"
+  }
 }
