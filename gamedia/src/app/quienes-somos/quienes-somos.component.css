@@ -26,3 +26,7 @@ hr {
 .boton {
     border-radius: 10px;
 }
+
+.logo {
+    float: left;
+}
