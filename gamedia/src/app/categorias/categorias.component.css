@@ -21,8 +21,25 @@ hr {
     margin-right: 25px;
 }
 .busqueda {
+  
+    width: 50%;
     border-radius: 10px;
 }
 .boton {
     border-radius: 10px;
 }
+
+#padre {
+    padding: 2%;
+    position: relative;
+   width: 400px;
+   height: 170px;
+  }
+#hijo {
+    position: center; 
+    width: 400px;
+    height: 50px;
+  }
+  #titulo{
+      padding: 2%;
+  }
