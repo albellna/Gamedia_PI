@@ -1,5 +1,9 @@
 body {
     font-family: 'Comfortaa', cursive;
+	color: black;
+}
+.video {
+	background-image: url(https://www.youtube.com/watch?v=Wx-K-MAcV6s);
 }
 .barranav > a:hover {
     background-color: black;
@@ -63,3 +67,23 @@ hr {
     width: 100px;
 	height: 50px;
 }
+#card1 {
+    margin: 30px;
+}
+#card2 {
+    margin: 30px;
+}
+#card3 {
+    margin: 30px;
+}
+.cards {
+    padding-left: 50px; 
+}
+#jumbotron {
+    background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
+    background-size: cover;
+    width: auto;
+    height: 280px;
+/*     margin: 5%; */
+    padding: 3%;
+  }
