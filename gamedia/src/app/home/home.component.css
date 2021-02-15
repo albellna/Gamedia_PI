@@ -27,6 +27,9 @@ hr {
 .busqueda {
     border-radius: 10px;
 }
+.espacio-busqueda {
+	padding-top: 250px;
+}
 .boton {
     border-radius: 10px;
 }
@@ -36,6 +39,7 @@ hr {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
+	margin-top: 440px;
 }
 
 .slider ul {
