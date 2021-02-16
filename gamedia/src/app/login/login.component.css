@@ -40,6 +40,10 @@ hr {
     text-align: center;
 }
 
+#margenboton{
+    margin-bottom: 38px;
+}
+
 
 .logo {
     float: left;
