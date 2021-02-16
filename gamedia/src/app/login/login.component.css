@@ -26,3 +26,16 @@ hr {
 .boton {
     border-radius: 10px;
 }
+
+
+#margentitulo{
+    padding-top: 20px;
+}
+
+#margen{
+    padding-top: 20px;
+}
+
+#centrar{
+    text-align: center;
+}
