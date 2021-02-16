@@ -91,3 +91,12 @@ hr {
 /*     margin: 5%; */
     padding: 3%;
   }
+  #jumbotron2 {
+    background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
+    background-size: cover;
+    width: auto;
+    height: 280px;
+/*     margin: 5%; */
+    padding: 3%;
+
+  }
