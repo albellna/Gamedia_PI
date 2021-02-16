@@ -26,3 +26,17 @@ hr {
 .boton {
     border-radius: 10px;
 }
+
+.logo {
+    float: left;
+}
+
+.equipo {
+    width: 900px;
+    height: 375px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
