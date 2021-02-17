@@ -34,3 +34,30 @@ hr {
 #color {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.equipo {
+    width: 900px;
+    height: 375px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.iframe {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    text-align: center;
+}
+
+.margenes {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
