@@ -40,8 +40,12 @@ hr {
     text-align: center;
 }
 
-#margenboton{
-    margin-bottom: 38px;
+#margenBotonRegister{
+    margin-bottom: 76px;
+}
+
+#margenBotonLogin{
+    margin-bottom: 40px;
 }
 
 
