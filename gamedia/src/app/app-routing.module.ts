@@ -7,7 +7,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'categorias', component: CategoriasComponent},
   {path: 'quienessomos', component: QuienesSomosComponent},
   {path: 'contacto', component: ContactoComponent},
