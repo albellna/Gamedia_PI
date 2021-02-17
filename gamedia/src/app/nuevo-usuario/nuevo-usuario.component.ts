@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from './usuario.service';
 
 
-
 @Component({
   selector: 'app-nuevo-usuario',
   templateUrl: './nuevo-usuario.component.html',
