@@ -48,6 +48,11 @@ hr {
     margin-bottom: 40px;
 }
 
+#botonRegister > a:hover, a:active, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 
 .logo {
     float: left;
