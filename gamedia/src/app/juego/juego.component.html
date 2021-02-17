@@ -1,15 +1,25 @@
-  <ng-template pTemplate="body" let-juego>
-    <h1>{{ juego.titulo }}</h1>
-    {{ juego.descripcion }}
-    {{ juego.portada }}
-    {{ juego.screenshots }}
-    {{ juego.video }}
-    {{ juego.ageRating }}
-    {{ juego.categoria }}
-    {{ juego.genero }}
-    {{ juego.dlcs }}
-    {{ juego.fechaSalida }}
-    {{ juego.companias }}
-    {{ juego.rating }}
-    {{ juego.similares }}
+<p-table [value]="juegos">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Cliente</th>
+    </tr>
   </ng-template>
+  <ng-template pTemplate="body" let-juego>
+    <tr>
+      <td>{{ juego.descripcion }}</td>
+      <td>{{ juego.portada }}</td>
+      <td>{{ juego.screenshots }}</td>
+      <td>{{ juego.video }}</td>
+      <td>{{ juego.ageRating }}</td>
+      <td>{{ juego.categoria }}</td>
+      <td>{{ juego.genero }}</td>
+      <td>{{ juego.dlcs }}</td>
+      <td>{{ juego.fechaSalida }}</td>
+      <td>{{ juego.companias }}</td>
+      <td>{{ juego.rating }}</td>
+      <td>{{ juego.similares }}</td>
+    </tr>
+  </ng-template>
+</p-table>

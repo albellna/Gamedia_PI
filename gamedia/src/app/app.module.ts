@@ -9,6 +9,7 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { JuegoComponent } from './juego/juego.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { JuegoComponent } from './juego/juego.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
