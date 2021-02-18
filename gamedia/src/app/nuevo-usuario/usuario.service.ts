@@ -11,7 +11,7 @@ const cabecera = {headers: new HttpHeaders({'Content-TYpe': 'application/json'})
 })
 export class UsuarioService {
   
-  usuarioURL = "https://localhost:8000/api/user";
+  usuarioURL = "https://localhost:8000/api/users";
 
   constructor(private httpClient: HttpClient) { }
 
