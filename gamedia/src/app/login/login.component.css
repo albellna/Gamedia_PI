@@ -12,6 +12,16 @@ body {
     border-radius: 6px;
 }
 
+form > div > button{
+    background-color: #F10303;
+    color: #FFFFFF;
+}
+
+form > div > button:hover{
+    background-color: #CD0000;
+    color: #FFFFFF;
+}
+
 .botones {
     margin: 4px;
 }
