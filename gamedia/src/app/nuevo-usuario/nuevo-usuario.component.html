@@ -48,14 +48,24 @@
             <input type="text" class="form-control" name="password" [(ngModel)]="form.password" required autocomplete="off">
           </div>
           
-    
+          <div>
+            <button class="btn btn-primary float-left mr-3" (click)="volver()">Volver</button>  
+            <button type="submit" class="btn btn-success" [disabled]="!f.valid">Crear</button>
+        </div>
           <dialog id="ms">
             <p>Account created, pls press continue.</p>
             <a href="/"><button id="close" onclick="window.location.href='/'">Continue</button></a>
           </dialog>
           <button id="show" onclick="document.getElementById('ms').showModal()">Create account</button>
-
+          <br>
+          <div *ngIf="failuser" class="float-left">
+            <p class="p-3 bg-danger text-white rounded">Error: {{mensajeFail}}</p>
+          </div>
+          <div *ngIf="creado" class="float-left">
+            <p class="p-3 bg-success text-white rounded">OK: {{mensajeOK}}</p>
+          </div>
         </form>
+     
     </div>
 
 
