@@ -52,11 +52,19 @@ hr {
     margin-left: -180px;
     margin-top: 196px;
 }
-
-.informacion {
-    border-top-width: 10px;
-    border-right-width: 1em;
-    border-bottom-width: thick;
-    border-left-width: thin;
+#cajon1{
+    float:left;
+    margin-bottom: 100px;
+    width: 900px;
+    height: 316px;
+    margin-left: 5px;
     border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+#cajon2{
+    float:right;
+    /* background: lightgray; */
+    margin-bottom: 100px;
+    width: 565px;
 }
