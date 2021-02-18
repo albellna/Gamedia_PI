@@ -1,25 +1,39 @@
-<p-table [value]="juegos">
-  <ng-template pTemplate="header">
-    <tr>
-      <th>ID</th>
-      <th>Título</th>
-      <th>Cliente</th>
-    </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-juego>
-    <tr>
-      <td>{{ juego.descripcion }}</td>
-      <td>{{ juego.portada }}</td>
-      <td>{{ juego.screenshots }}</td>
-      <td>{{ juego.video }}</td>
-      <td>{{ juego.ageRating }}</td>
-      <td>{{ juego.categoria }}</td>
-      <td>{{ juego.genero }}</td>
-      <td>{{ juego.dlcs }}</td>
-      <td>{{ juego.fechaSalida }}</td>
-      <td>{{ juego.companias }}</td>
-      <td>{{ juego.rating }}</td>
-      <td>{{ juego.similares }}</td>
-    </tr>
-  </ng-template>
-</p-table>
+<div *ngFor="let gms of juegos">
+	<p>Name: {{gms.name}}</p>
+  <img src="{{ gms.cover.url }}">
+  <p>----------------------------------</p>
+  <p>{{ gms.summary }}</p>
+  <p>----------------------------------</p>
+	<div *ngFor="let scrn of gms.screenshots">
+		<img src="{{ scrn.url }}">
+	</div>
+  <p>----------------------------------</p>
+  <div *ngFor="let vids of gms.videos">
+    {{ vids.video_id }}
+	</div>
+  <p>----------------------------------</p>
+  <div *ngFor="let age of gms.age_ratings.content_descriptions">
+    {{ age.description }}
+  </div>
+  <p>----------------------------------</p>
+  <div *ngFor="let gen of gms.genres">
+    {{ gen.name }}
+	</div>
+  <p>----------------------------------</p>
+  <div *ngFor="let dlc of gms.dlcs">
+    {{ dlc.name }}
+	</div>
+  <p>----------------------------------</p>
+  {{ gms.first_release_date }}
+  <p>----------------------------------</p>
+  <div *ngFor="let comp of gms.involved_companies">
+    {{ comp.company.name }}
+	</div>
+  <p>----------------------------------</p>
+    {{ gms.rating }}
+  <p>----------------------------------</p>
+  <div *ngFor="let smgm of gms.similar_games">
+    {{ smgm.name }}
+	</div>
+  
+</div>

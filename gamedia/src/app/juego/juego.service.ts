@@ -20,9 +20,9 @@ export class JuegoService {
     if (token != null){
       console.log(token);
       this.cabecera = {headers: new HttpHeaders({'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer '+token})};
-      this.body = "fields *; limit 1;";
+      this.body = "fields name, cover.url, screenshots.url, videos.video_id, age_ratings.content_descriptions.description, genres.name, dlcs.name, first_release_date, involved_companies.company.name, rating, similar_games.name; where id=10;";
     } else {
-      console.log("Error al comprobar el Token. No se ha proporcionado.");
+      console.log("Error al comprobar el Token. No se ha proporcionado."); 
     }
     return this.httpClient.post(this.apiURL, this.body, this.cabecera);
   }
