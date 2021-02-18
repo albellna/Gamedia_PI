@@ -1,28 +1,39 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
+.barranav > a{
+    color: #000000;
+}
+
 .barranav > a:hover {
     background-color: black;
     color: white;
     border-radius: 6px;
 }
+
 .botones {
     margin: 4px;
 }
+
 .menu {
     display: flex;
     justify-content: flex-end;
 }
+
 .barra  {
     padding-top: 20px
 }
+
 hr {
     margin-left: 30px;
     margin-right: 25px;
 }
+
 .busqueda {
     border-radius: 10px;
 }
+
 .boton {
     border-radius: 10px;
 }

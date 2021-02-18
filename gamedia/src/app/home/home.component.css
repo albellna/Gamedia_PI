@@ -2,6 +2,11 @@ body {
     font-family: 'Comfortaa', cursive;
 	color: black;
 }
+
+.barranav > a{
+    color: #000000;
+}
+
 .video {
 	background-image: url(https://www.youtube.com/watch?v=Wx-K-MAcV6s);
 }

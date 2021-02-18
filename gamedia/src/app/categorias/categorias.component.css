@@ -1,6 +1,11 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
+.barranav > a{
+    color: #000000;
+}
+
 .barranav > a:hover {
     background-color: black;
     color: white;
