@@ -45,9 +45,11 @@
           </div>
           
     
-          <div class="form-group">
-            <button type="submit" class="btn" id="margenboton">Create account</button>
-          </div>
+          <dialog id="ms">
+            <p>Account created, pls press continue.</p>
+            <a href="/"><button id="close" onclick="window.location.href='/'">Continue</button></a>
+          </dialog>
+          <button id="show" onclick="document.getElementById('ms').showModal()">Create account</button>
 
         </form>
     </div>
