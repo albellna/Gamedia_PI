@@ -2,17 +2,18 @@ body {
     font-family: 'Comfortaa', cursive;
 	color: black;
 }
-
-.barranav > a{
-    color: #000000;
+/* .hamburguesa {
+    float: right;
+} */
+.barranav > li{
+    color: white;
 }
 
 .video {
 	background-image: url(https://www.youtube.com/watch?v=Wx-K-MAcV6s);
 }
-.barranav > a:hover {
-    background-color: black;
-    color: white;
+.barranav > li:hover {
+        color: white;
     border-radius: 6px;
 }
 .botones {
@@ -28,6 +29,7 @@ body {
 hr {
     margin-left: 30px;
     margin-right: 25px;
+    margin-top: -10px;
 }
 .busqueda {
     border-radius: 10px;
