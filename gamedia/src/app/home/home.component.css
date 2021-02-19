@@ -8,10 +8,6 @@ body {
 .barranav > li{
     color: white;
 }
-
-.video {
-	background-image: url(https://www.youtube.com/watch?v=Wx-K-MAcV6s);
-}
 .barranav > li:hover {
         color: white;
     border-radius: 6px;
