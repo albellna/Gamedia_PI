@@ -2,16 +2,11 @@ body {
     font-family: 'Comfortaa', cursive;
 	color: black;
 }
-/* .hamburguesa {
-    float: right;
-} */
+
 .barranav > li{
     color: white;
 }
 
-.video {
-	background-image: url(https://www.youtube.com/watch?v=Wx-K-MAcV6s);
-}
 .barranav > li:hover {
         color: white;
     border-radius: 6px;
@@ -24,7 +19,7 @@ body {
     justify-content: flex-end;
 }
 .barra  {
-    padding-top: -20px
+    padding-top: -20px;
 }
 hr {
     margin-left: 30px;
@@ -37,13 +32,19 @@ hr {
 .espacio-busqueda {
 	padding-top: 250px;
 }
-.boton {
-    border-radius: 10px;
-}
+#botonimagen{
+    background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height:40px;
+    width:40px;
+    background-position:center;
+    border: 0ch;
+  }
 .fondo {
     background-image: url(/assets/img/zelda.jpg);
     background-size: cover;
-    height: 722px;
+    height: 645px;
 }
 
 .slider {
