@@ -1,7 +1,12 @@
 {
+    "/v4/*": {
+        "target": "https://api.igdb.com",
+        "secure": true,
+        "changeOrigin": true
+    },
     "/api/*":{
         "target": "https://localhost:8000",
         "secure": false,
-        "logLevel": "debug"
+        "logLevel": "debug" 
     }
 }

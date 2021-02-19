@@ -8,6 +8,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
+import { JuegoComponent } from './juego/juego.component';
+import { TableModule } from 'primeng/table';
 import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
 import { FormsModule } from '@angular/forms';
 
@@ -19,12 +21,14 @@ import { FormsModule } from '@angular/forms';
     QuienesSomosComponent,
     ContactoComponent,
     LoginComponent,
+    JuegoComponent,
     NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    TableModule,
     FormsModule
   ],
   providers: [],
