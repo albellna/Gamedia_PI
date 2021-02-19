@@ -6,14 +6,16 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { JuegoComponent } from './juego/juego.component';
 import { LoginComponent } from './login/login.component';
+import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'categorias', component: CategoriasComponent},
   {path: 'quienessomos', component: QuienesSomosComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'game/:id', component: JuegoComponent}
+  {path: 'game/:id', component: JuegoComponent},
+  {path: 'register', component: NuevoUsuarioComponent}
 ];
 
 @NgModule({

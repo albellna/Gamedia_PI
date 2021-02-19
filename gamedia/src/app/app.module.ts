@@ -10,6 +10,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { JuegoComponent } from './juego/juego.component';
 import { TableModule } from 'primeng/table';
+import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { TableModule } from 'primeng/table';
     QuienesSomosComponent,
     ContactoComponent,
     LoginComponent,
-    JuegoComponent
+    JuegoComponent,
+    NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    TableModule
+    TableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

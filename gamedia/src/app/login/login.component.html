@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Login</title>
+    <title>Register</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,21 +10,96 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light barra">
-        <a class="navbar-brand" href="/home">
-            <img src="../assets/img/logodefintivo.png" width="60" height="60" class="d-inline-block align-top" alt="">
-        </a>
-        <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
-            <div class="navbar-nav barranav">
-                <a class="nav-item nav-link" href="/categorias">CATEGORIAS</a>
-                <a class="nav-item nav-link" href="/quienessomos">QUIENES SOMOS</a>
-                <a class="nav-item nav-link" href="/contacto">CONTACTO</a>
-                <a class="nav-item nav-link" href="/login">LOGIN</a>
-            </div>
-        </div>
-    </nav>
+<!--     <nav class="navbar navbar-expand-lg navbar-light barra">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="../assets/img/logodefintivo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+      </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/categorias">CATEGORIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/quienessomos">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+    </nav> -->
     <hr>
 
+    <div class="container">
+
+        <h5 id="margentitulo">Login</h5>
+
+        <form name="form" novalidate>
+            
+          <div class="form-group">
+            <label for="username" id="margen">Username: </label>
+            <input type="text" class="form-control" name="username" required>
+          </div>    
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="text" class="form-control" name="email" required>
+          </div>   
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="text" class="form-control" name="password" required>
+          </div>
+    
+          <div class="form-group">
+            <button type="submit" class="btn" id="margenBotonLogin">Login</button>
+          </div>
+          
+          <div class="form-group">
+            <p>You are not registered?</p>
+            <button type="submit" class="btn" id="margenBotonRegister" id="botonRegister"><a href="/register">Register</a></button>
+          </div>
+
+        </form>
+    </div>
+
+
+    <footer class="bg-light text-lg-start">
+    
+        <div class="text-center p-3" id="color">
+
+            <div class="row">
+        
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <a href="/">
+                        <img src="../assets/img/logodefintivo.png"  width="60" height="60" alt="" class="logo">
+                    </a>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <br>
+                   <p>© 2021 Copyright: GAMEDIA</p> 
+                </div>
+                
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <a title="Twitch" href="https://www.twitch.tv/"><img src="../assets/img/footer/twitch.png" width="50" height="50" alt=""></a>
+                    <a title="Facebook" href="https://es-es.facebook.com/"><img src="../assets/img/footer/facebook.png" width="40" height="40" alt=""></a>
+                    <a title="Instagram" href="https://www.instagram.com/"><img src="../assets/img/footer/instagram.png" width="50" height="50" alt=""></a>
+                    <a title="Twitter" href="https://twitter.com/?lang=es"><img src="../assets/img/footer/twitter.png" width="45" height="45" alt=""></a>
+                    <a title="Discord" href="https://discord.com/"><img src="../assets/img/footer/discord.png" width="50" height="50" alt=""></a>
+                    <a title="Youtube" href="https://www.youtube.com/"><img src="../assets/img/footer/youtube.png" width="60" height="60" alt=""></a>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </footer>
+    
 </body>
 
 </html>

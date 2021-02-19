@@ -1,11 +1,27 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
+.barranav > a{
+    color: #000000;
+}
+
 .barranav > a:hover {
     background-color: black;
     color: white;
     border-radius: 6px;
 }
+
+form > div > button{
+    background-color: #F10303;
+    color: #FFFFFF;
+}
+
+form > div > button:hover{
+    background-color: #CD0000;
+    color: #FFFFFF;
+}
+
 .botones {
     margin: 4px;
 }
@@ -14,9 +30,10 @@ body {
     justify-content: flex-end;
 }
 .barra  {
-    padding-top: 20px
+    padding-top: -20px;
 }
 hr {
+    margin-top: -5px;
     margin-left: 30px;
     margin-right: 25px;
 }
@@ -25,4 +42,34 @@ hr {
 }
 .boton {
     border-radius: 10px;
+}
+
+
+.logo {
+    float: left;
+}
+
+#color {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#margentitulo{
+    padding-top: 20px;
+}
+
+#margen{
+    padding-top: 20px;
+}
+
+#centrar{
+    text-align: center;
+}
+
+#imgpregunta{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,9 +1,15 @@
 body {
     font-family: 'Comfortaa', cursive;
+	color: black;
 }
-.barranav > a:hover {
-    background-color: black;
+/* .hamburguesa {
+    float: right;
+} */
+.barranav > li{
     color: white;
+}
+.barranav > li:hover {
+        color: white;
     border-radius: 6px;
 }
 .botones {
@@ -14,24 +20,55 @@ body {
     justify-content: flex-end;
 }
 .barra  {
-    padding-top: 20px
+    padding-top: -20px
 }
 hr {
     margin-left: 30px;
     margin-right: 25px;
+    margin-top: -10px;
 }
 .busqueda {
     border-radius: 10px;
+    width: 50%;
 }
+
 .boton {
     border-radius: 10px;
 }
+.fondo {
+    background-image: url(/assets/img/zelda.jpg);
+    background-size: cover;
+    height: 722px;
+}
 
+#padre {
+    position: relative;
+   width: 800px;
+   height: 170px;
+   padding-top: 250px;
+  }
+#hijo {
+    position: center; 
+    width: 700px;
+    height: 50px;
+  }
+
+#botonimagen{
+    background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height:40px;
+    width:40px;
+    background-position:center;
+    border: 0ch;
+  }
 
 .slider {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
+	margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .slider ul {
@@ -48,19 +85,52 @@ hr {
 }
 
 .slider img {
-	width: 20%;
+	width: 4%;
+	margin-left: 200px;
 }
 
 @keyframes cambio {
-	0% {margin-left: 10%;}
-	32% {margin-left: 10%;}
+	0% {margin-left: 13%;}
+	49% {margin-left: 13%;}
 	
-	33% {margin-left: -123.3%;}
-	65% {margin-left: -123.3%;}
-	
-	66% {margin-left: -256.6%;}
-	100% {margin-left: -256.6%;}
+	50% {margin-left: -137%;}
+	100% {margin-left: -137%;}
 }
 .carousel {
-    height: 200px;
+    width: 100px;
+	height: 50px;
+    margin-top: 10px;
+}
+#card1 {
+    margin: 30px;
+}
+#card2 {
+    margin: 30px;
+}
+#card3 {
+    margin: 30px;
+}
+.cards {
+    padding-left: 50px; 
+}
+#jumbotron {
+    background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
+    background-size: cover;
+    width: auto;
+    height: 280px;
+    padding: 3%;
+}
+#jumbotron2 {
+    background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
+    background-size: cover;
+    width: auto;
+    height: 280px;
+    padding: 3%;
+}
+.logo {
+    float: left;
+}
+
+#color {
+    background-color: rgba(0, 0, 0, 0.2);
 }

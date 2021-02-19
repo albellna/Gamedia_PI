@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!--    <nav class="navbar navbar-expand-lg navbar-light barra">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="../assets/img/logodefintivo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+      </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/categorias">CATEGORIAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/quienessomos">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+    </nav> -->
+    <hr>
+
+    <div class="container">
+      <div *ngIf="failuser" class="float-right">
+        <p class="p-3 bg-danger text-white rounded">Error: {{mensajeFail}}</p>
+      </div>
+      <div *ngIf="creado" class="float-right">
+        <p class="p-3 bg-success text-white rounded">Cuenta creada {{mensajeOK}}</p>
+      </div>
+        <h5 id="margentitulo">Register</h5>
+
+        <form name="form" (ngSubmit)=onCreate() #f="ngForm" novalidate>
+        
+          <div class="form-group">
+            <label for="name" id="margentitulo">Name: </label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="form.name" required autocomplete="off">
+          </div>     
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="form.username" required autocomplete="off">
+          </div>      
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="text" class="form-control" name="email" [(ngModel)]="form.email" required autocomplete="off">
+          </div>      
+          <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="form.password" required autocomplete="off">
+          </div>
+          
+          <div id="margenfooter">
+            <button type="submit" class="btn" [disabled]="!f.valid" onclick="document.getElementById('ms').showModal()">Crear</button>
+            <button class="btn" (click)="volver()" id="margenboton">Volver</button>  
+          </div>
+          <dialog id="ms">
+            <p>Account created, press continue.</p>
+            <a href="/"><button id="close" onclick="window.location.href='/'">Continue</button></a>
+          </dialog>
+      
+        </form>
+     
+    </div>
+
+
+    <footer class="bg-light text-lg-start">
+    
+        <div class="text-center p-3" id="color">
+
+            <div class="row">
+        
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <a href="/">
+                        <img src="../assets/img/logodefintivo.png"  width="60" height="60" alt="" class="logo">
+                    </a>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <br>
+                   <p>© 2021 Copyright: GAMEDIA</p> 
+                </div>
+                
+                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                    <a title="Twitch" href="https://www.twitch.tv/"><img src="../assets/img/footer/twitch.png" width="50" height="50" alt=""></a>
+                    <a title="Facebook" href="https://es-es.facebook.com/"><img src="../assets/img/footer/facebook.png" width="40" height="40" alt=""></a>
+                    <a title="Instagram" href="https://www.instagram.com/"><img src="../assets/img/footer/instagram.png" width="50" height="50" alt=""></a>
+                    <a title="Twitter" href="https://twitter.com/?lang=es"><img src="../assets/img/footer/twitter.png" width="45" height="45" alt=""></a>
+                    <a title="Discord" href="https://discord.com/"><img src="../assets/img/footer/discord.png" width="50" height="50" alt=""></a>
+                    <a title="Youtube" href="https://www.youtube.com/"><img src="../assets/img/footer/youtube.png" width="60" height="60" alt=""></a>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </footer>
+    
+</body>
+
+</html>

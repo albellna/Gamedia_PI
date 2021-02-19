@@ -10,46 +10,143 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light barra">
-    <a class="navbar-brand" href="/home">
+  <div class="fondo">
+<!--     <nav class="navbar navbar-expand-lg navbar-light barra">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
       <img src="../assets/img/logodefintivo.png" width="60" height="60" class="d-inline-block align-top" alt="">
     </a>
-    <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
-      <div class="navbar-nav barranav">
-        <a class="nav-item nav-link" href="/categorias">CATEGORIAS</a>
-        <a class="nav-item nav-link" href="/quienessomos">QUIENES SOMOS</a>
-        <a class="nav-item nav-link" href="/contacto">CONTACTO</a>
-        <a class="nav-item nav-link" href="/login">LOGIN</a>
-      </div>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/categorias">CATEGORIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/quienessomos">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+  </nav> -->
   <hr>
-  <div class="container-sm">
-    <input class="form-control mr-sm-2 busqueda" type="search" placeholder="Search your favorite game"
+  <div id="padre" class="container-sm">
+    <form class="form-inline">
+      <input id="hijo" class="form-control mr-sm-3 busqueda" type="search" placeholder="Search your favorite game" 
       aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0 boton" type="submit">Search</button>
+      <button id="botonimagen" class="btn btn-outline my-2 my-sm-0" type="submit"></button>
+    </form>
   </div>
-  <hr>
+  </div>
   <div class="slider">
     <ul>
-      <li>
-        <img src="../assets/img/instant-gaming.png" class="carousel" alt="">
-        <img src="../assets/img/easports.png" class="carousel" alt="">
-        <img src="../assets/img/cdproject.png" class="carousel" alt="">
+      <li class="carousel">
+        <img src="../assets/img/twitch-logo.png" alt="">
+        <img src="../assets/img/easports.png" alt="">
+        <img src="../assets/img/cdproject.png" alt="">
       </li>
       <li>
-        <img src="../assets/img/activision.png" class="carousel" alt="">
-        <img src="../assets/img/2k.png" class="carousel" alt="">
-        <img src="../assets/img/steam.png" class="carousel" alt="">
-      </li>
-      <li>
-        <img src="../assets/img/ubisoft.png" class="carousel" alt="">
-        <img src="../assets/img/blizzard.png" class="carousel" alt="">
-        <img src="http://welltechnically.com/wp-content/uploads/2013/08/android-wallpapers-700x300.jpg" class="carousel"
-          alt="">
+        <img src="../assets/img/mastercard.png" class="carousel1" alt="">
+        <img src="../assets/img/xbox.png" class="carousel1" alt="">
+        <img src="../assets/img/playstation.png" class="carousel1" alt="">
       </li>
     </ul>
   </div>
+  <div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+      <div class="cards">
+
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+          <div id="card1" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px;">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <a href="rebajas.html"><img src="30.JPG" class="card-img-top" alt="Card image" /></a>
+          </div>
+
+          <div id="card2" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px;">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <a href="rebajas.html"> <img src="40.JPG" class="card-img-top" alt="Card image" /></a>
+          </div>
+
+          <div id="card3" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <a href="rebajas.html"> <img src="50.JPG" class="card-img-top" alt="Card image" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="jumbotron2" class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+      <div class="cards">
+
+        <div class="row col-xs-16 col-sm-16 col-md-16 col-lg-16 col-xl-16">
+
+          <div id="card1" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px;">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <img src="30.JPG" class="card-img-top" alt="Card image" />
+          </div>
+
+          <div id="card2" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px;">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <img src="40.JPG" class="card-img-top" alt="Card image" />
+          </div>
+
+          <div id="card3" class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="max-width:270px">
+            <h4 class="card-title">Rebajas al 50%</h4>
+            <img src="50.JPG" class="card-img-top" alt="Card image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-light text-lg-start">
+
+    <div class="text-center p-3" id="color">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <a href="/">
+            <img src="../assets/img/logodefintivo.png" width="60" height="60" alt="" class="logo">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <br>
+          <p>© 2021 Copyright: GAMEDIA</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+          <a title="Twitch" href="https://www.twitch.tv/"><img src="../assets/img/footer/twitch.png" width="50"
+              height="50" alt=""></a>
+          <a title="Facebook" href="https://es-es.facebook.com/"><img src="../assets/img/footer/facebook.png" width="40"
+              height="40" alt=""></a>
+          <a title="Instagram" href="https://www.instagram.com/"><img src="../assets/img/footer/instagram.png"
+              width="50" height="50" alt=""></a>
+          <a title="Twitter" href="https://twitter.com/?lang=es"><img src="../assets/img/footer/twitter.png" width="45"
+              height="45" alt=""></a>
+          <a title="Discord" href="https://discord.com/"><img src="../assets/img/footer/discord.png" width="50"
+              height="50" alt=""></a>
+          <a title="Youtube" href="https://www.youtube.com/"><img src="../assets/img/footer/youtube.png" width="60"
+              height="60" alt=""></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

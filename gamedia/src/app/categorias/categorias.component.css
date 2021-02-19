@@ -1,6 +1,11 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
+.barranav > a{
+    color: #000000;
+}
+
 .barranav > a:hover {
     background-color: black;
     color: white;
@@ -14,15 +19,74 @@ body {
     justify-content: flex-end;
 }
 .barra  {
-    padding-top: 20px
+    padding-top: -20px;
 }
 hr {
+    margin-top: -5px;
     margin-left: 30px;
     margin-right: 25px;
 }
 .busqueda {
+    width: 50%;
     border-radius: 10px;
 }
 .boton {
     border-radius: 10px;
 }
+
+
+.logo {
+    float: left;
+}
+
+#color {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#padre {
+    padding: 2%;
+    position: relative;
+   width: 600px;
+   height: 170px;
+  }
+#hijo {
+    position: center; 
+    width: 400px;
+    height: 50px;
+  }
+  
+  #titulo{
+      padding: 2%;
+  }
+
+  #centro{
+      text-align: center;
+  }
+  #centro:hover {
+    color: #F10303;
+  }
+
+  #rowid{
+      margin-bottom: 3%;
+  }
+
+  #botonimagen{
+    background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height:40px;
+    width:40px;
+    background-position:center;
+    border: 0ch;
+  }
+
+   #centro img {
+
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  #centro img.top:hover {
+    opacity: 0;
+  }
