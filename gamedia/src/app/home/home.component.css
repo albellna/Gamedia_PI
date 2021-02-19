@@ -33,10 +33,9 @@ hr {
 }
 .busqueda {
     border-radius: 10px;
+    width: 50%;
 }
-.espacio-busqueda {
-	padding-top: 250px;
-}
+
 .boton {
     border-radius: 10px;
 }
@@ -45,6 +44,28 @@ hr {
     background-size: cover;
     height: 722px;
 }
+
+#padre {
+    position: relative;
+   width: 800px;
+   height: 170px;
+   padding-top: 250px;
+  }
+#hijo {
+    position: center; 
+    width: 700px;
+    height: 50px;
+  }
+
+#botonimagen{
+    background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height:40px;
+    width:40px;
+    background-position:center;
+    border: 0ch;
+  }
 
 .slider {
 	width: 95%;

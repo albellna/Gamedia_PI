@@ -47,7 +47,7 @@ hr {
 #padre {
     padding: 2%;
     position: relative;
-   width: 400px;
+   width: 600px;
    height: 170px;
   }
 #hijo {
@@ -55,6 +55,7 @@ hr {
     width: 400px;
     height: 50px;
   }
+  
   #titulo{
       padding: 2%;
   }
@@ -79,11 +80,13 @@ hr {
     background-position:center;
     border: 0ch;
   }
+
    #centro img {
 
     left: 0;
     transition: opacity 1.5s ease-in-out;
   }
+
   #centro img.top:hover {
     opacity: 0;
   }
