@@ -26,11 +26,16 @@
     <hr>
 
     <div class="container">
-
+      <div *ngIf="failuser" class="float-right">
+        <p class="p-3 bg-danger text-white rounded">Error: {{mensajeFail}}</p>
+      </div>
+      <div *ngIf="creado" class="float-right">
+        <p class="p-3 bg-success text-white rounded">Cuenta creada {{mensajeOK}}</p>
+      </div>
         <h5 id="margentitulo">Register</h5>
 
         <form name="form" (ngSubmit)=onCreate() #f="ngForm" novalidate>
-            
+        
           <div class="form-group">
             <label for="name" id="margen">Name: </label>
             <input type="text" class="form-control" name="name" [(ngModel)]="form.name" required autocomplete="off">
@@ -49,8 +54,8 @@
           </div>
           
           <div>
-            <button class="btn btn-primary float-left mr-3" (click)="volver()">Volver</button>  
             <button type="submit" class="btn btn-success" [disabled]="!f.valid">Crear</button>
+            <button class="btn btn-primary float-left mr-3" (click)="volver()">Volver</button>  
         </div>
           <dialog id="ms">
             <p>Account created, pls press continue.</p>
@@ -58,12 +63,7 @@
           </dialog>
           <button id="show" onclick="document.getElementById('ms').showModal()">Create account</button>
           <br>
-          <div *ngIf="failuser" class="float-left">
-            <p class="p-3 bg-danger text-white rounded">Error: {{mensajeFail}}</p>
-          </div>
-          <div *ngIf="creado" class="float-left">
-            <p class="p-3 bg-success text-white rounded">OK: {{mensajeOK}}</p>
-          </div>
+       
         </form>
      
     </div>
