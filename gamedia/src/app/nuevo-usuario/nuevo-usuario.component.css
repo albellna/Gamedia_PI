@@ -54,17 +54,13 @@ hr {
     padding-top: 20px;
 }
 
-#margen{
+#margenfooter{
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-#centrar{
-    text-align: center;
-}
-
-#show{
-    margin-top: 20px;
-    margin-bottom: 134px;
+#margenboton{
+    margin-left: 20px;
 }
 
 
