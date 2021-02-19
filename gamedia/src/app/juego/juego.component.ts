@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { JuegoService } from './juego.service';
+import { HttpClient } from '@angular/common/http';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-juego',
@@ -11,7 +13,12 @@ export class JuegoComponent implements OnInit {
 
   juegos: any;
   token: any;
-  constructor(private juegoService: JuegoService, private router: Router) { }
+  id: any;
+  constructor(private juegoService: JuegoService, private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.params.subscribe(response => {
+      this.id = response.id;
+    });
+  }
 
   ngOnInit(): void {
     this.juegoService.getToken();
@@ -20,7 +27,7 @@ export class JuegoComponent implements OnInit {
   }
 
   public mostrarJuego() {
-    this.juegoService.consultaJuego(this.token).subscribe(data => {
+    this.juegoService.consultaJuego(this.token,this.id).subscribe(data => {
       this.juegos = data;
     },
     (err: any) => {

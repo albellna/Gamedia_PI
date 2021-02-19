@@ -12,8 +12,10 @@
     {{ vids.video_id }}
 	</div>
   <p>----------------------------------</p>
-  <div *ngFor="let age of gms.age_ratings.content_descriptions">
-    {{ age.description }}
+  <div *ngFor="let age of gms.age_ratings">
+    <div *ngFor="let cont of age.content_descriptions">
+      {{ cont.description }}
+    </div>
   </div>
   <p>----------------------------------</p>
   <div *ngFor="let gen of gms.genres">
@@ -33,7 +35,9 @@
     {{ gms.rating }}
   <p>----------------------------------</p>
   <div *ngFor="let smgm of gms.similar_games">
+    <div *ngFor="let cvr of gms.similar_games.cover">
+      <img src="{{ cvr.url }}">
+    </div>
     {{ smgm.name }}
 	</div>
-  
 </div>
