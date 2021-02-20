@@ -12,7 +12,7 @@ import { NgModule } from '@angular/core';
 
 export class UsuarioService {
   
-  usuarioURL = "https://localhost:8000/api/users";
+  usuarioURL = "http://localhost:8000/api/users";
   
 
   constructor(private httpClient: HttpClient) { }
