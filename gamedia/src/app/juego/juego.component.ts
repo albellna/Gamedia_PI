@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { JuegoService } from './juego.service';
-import { HttpClient } from '@angular/common/http';
 import {ActivatedRoute} from '@angular/router';
+import {UtilidadesService} from '../utilidades.service';
 
 @Component({
   selector: 'app-juego',
@@ -14,14 +13,14 @@ export class JuegoComponent implements OnInit {
   juegos: any;
   token: any;
   id: any;
-  constructor(private juegoService: JuegoService, private activatedRoute: ActivatedRoute) {
+  constructor(private juegoService: JuegoService, private utilidadesService: UtilidadesService, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.params.subscribe(response => {
       this.id = response.id;
     });
   }
 
   ngOnInit(): void {
-    this.juegoService.getToken();
+    this.utilidadesService.getToken();
     this.token = localStorage.getItem('access_token');
     this.mostrarJuego();
   }
