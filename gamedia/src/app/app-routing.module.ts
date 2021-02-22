@@ -7,6 +7,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { JuegoComponent } from './juego/juego.component';
 import { LoginComponent } from './login/login.component';
 import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
+import { ResultadoBusquedaComponent } from './resultado-busqueda/resultado-busqueda.component';
+import { BarraBusquedaComponent } from './barra-busqueda/barra-busqueda.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'game/:id', component: JuegoComponent},
+  {path: 'busqueda/:busqueda', component: ResultadoBusquedaComponent},
+  {path: 'busqueda', component: BarraBusquedaComponent},
   {path: 'register', component: NuevoUsuarioComponent}
 ];
 

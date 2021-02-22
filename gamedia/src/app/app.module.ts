@@ -12,6 +12,8 @@ import { JuegoComponent } from './juego/juego.component';
 import { TableModule } from 'primeng/table';
 import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
 import { FormsModule } from '@angular/forms';
+import { BarraBusquedaComponent } from './barra-busqueda/barra-busqueda.component';
+import { ResultadoBusquedaComponent } from './resultado-busqueda/resultado-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     ContactoComponent,
     LoginComponent,
     JuegoComponent,
-    NuevoUsuarioComponent
+    NuevoUsuarioComponent,
+    BarraBusquedaComponent,
+    ResultadoBusquedaComponent
   ],
   imports: [
     BrowserModule,
