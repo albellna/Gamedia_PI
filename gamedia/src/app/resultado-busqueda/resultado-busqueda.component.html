@@ -1,4 +1,3 @@
-
 <div *ngIf="resultados!='';else elseBlock">
     <div *ngFor="let res of resultados">
         <a href="http://localhost:4200/game/{{res.id}}">{{res.name}}</a>
@@ -6,3 +5,4 @@
     </div>
 </div>
 <ng-template #elseBlock>No hay resultados.</ng-template>
+<app-footer></app-footer>

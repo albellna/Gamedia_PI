@@ -1,6 +1,7 @@
 body {
     font-family: 'Comfortaa';
 	color: #000000;
+    font-weight: bold;
 }
 
 /* .hamburguesa {
@@ -42,21 +43,4 @@ hr {
 
 .boton {
     border-radius: 10px;
-}
-
-
-
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.footer {
-    position:absolute;
-   left:0px;
-   bottom:0px;
-   width: 100%;
 }
