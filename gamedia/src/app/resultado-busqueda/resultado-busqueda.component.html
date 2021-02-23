@@ -1,28 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="padre" class="container-sm">
-        <form class="form-inline">
-          <app-barra-busqueda></app-barra-busqueda>
-        </form>
+  <div id="padre" class="container-sm">
+    <form class="form-inline">
+      <app-barra-busqueda></app-barra-busqueda>
+    </form>
+  </div>
+  <div class="main">
+    <div *ngIf="resultados!='';else elseBlock">
+      <div *ngFor="let res of resultados">
+        <div class="titulo_juego">
+          <a href="http://localhost:4200/game/{{res.id}}">{{res.name}}</a>
+        </div>
+        <div class="portada_juego">
+          <img src="{{ res.cover.url }}">
+        </div>
       </div>
-    <div class="main">           
-                <div *ngIf="resultados!='';else elseBlock" >
-                <div *ngFor="let res of resultados">
-                <div class="titulo_juego">
-                        <a href="http://localhost:4200/game/{{res.id}}">{{res.name}}</a>
-                </div>
-                <div  class="portada_juego">
-                    <img src="{{ res.cover.url }}">
-                </div>
-                </div>
-                </div>
-      </div>
-      <app-footer></app-footer>
+    </div>
+    <ng-template #elseBlock>No hay resultados.</ng-template>
+  </div>
+  <app-footer></app-footer>
 </body>
+
 </html>
