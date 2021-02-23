@@ -4,18 +4,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class JuegoService {
+export class ResultadoBusquedaService {
 
   apiURL = "/v4/games"
   cabecera: any;
   body: any;
-  
+
   constructor(private httpClient: HttpClient) { }
-  
-  public consultaJuego(token: string, id: string){
+
+  public queryBusqueda(token: string, busqueda: string){
     if (token != null){
       this.cabecera = {headers: new HttpHeaders({'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer '+token})};
-      this.body = "fields name, summary, cover.url, screenshots.url, videos.video_id, age_ratings.content_descriptions.description, genres.name, dlcs.name, dlcs, first_release_date, involved_companies.company.name, rating, similar_games.*; where id="+id+";";
+      this.body = 'fields id, name, cover.url; search "'+busqueda+'"; limit 500;';
     } else {
       console.log("Error al comprobar el Token. No se ha proporcionado."); 
     }
