@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ResultadoBusquedaService } from './resultado-busqueda.service';
-import {ActivatedRoute} from '@angular/router';
-import {UtilidadesService} from '../utilidades.service';
+import { ActivatedRoute } from '@angular/router';
+import { UtilidadesService } from '../utilidades.service';
 
 @Component({
   selector: 'app-resultado-busqueda',
@@ -30,9 +30,9 @@ export class ResultadoBusquedaComponent implements OnInit {
     this.resultado.queryBusqueda(this.token, this.busqueda).subscribe(data => {
       this.resultados = data;
     },
-    (err: any) => {
-      console.log(err);
-    }
-  );
+      (err: any) => {
+        console.log(err);
+      }
+    );
   }
 }

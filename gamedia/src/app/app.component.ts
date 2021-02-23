@@ -10,11 +10,11 @@ import { from } from 'rxjs';
 })
 export class AppComponent {
   title = 'gamedia';
-  constructor(private usuarioSvc: UsuarioService){}
-  ngOnInit(){
-      this.usuarioSvc.getAll().subscribe((res) => {
+  constructor(private usuarioSvc: UsuarioService) { }
+  ngOnInit() {
+    this.usuarioSvc.getAll().subscribe((res) => {
       console.log('Res ', res);
     });
   }
- 
+
 }

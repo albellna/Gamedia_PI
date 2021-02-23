@@ -10,14 +10,14 @@ import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
 import { ResultadoBusquedaComponent } from './resultado-busqueda/resultado-busqueda.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'categorias', component: CategoriasComponent},
-  {path: 'quienessomos', component: QuienesSomosComponent},
-  {path: 'contacto', component: ContactoComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'game/:id', component: JuegoComponent},
-  {path: 'busqueda/:busqueda', component: ResultadoBusquedaComponent},
-  {path: 'register', component: NuevoUsuarioComponent}
+  { path: '', component: HomeComponent },
+  { path: 'categorias', component: CategoriasComponent },
+  { path: 'quienessomos', component: QuienesSomosComponent },
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'game/:id', component: JuegoComponent },
+  { path: 'busqueda/:busqueda', component: ResultadoBusquedaComponent },
+  { path: 'register', component: NuevoUsuarioComponent }
 ];
 
 @NgModule({

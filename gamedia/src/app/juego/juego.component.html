@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Game</title>
-  </head>
-  
+
+<head>
+  <title>Game</title>
+</head>
+
 <body>
   <div *ngFor="let gms of juegos">
-      <div class="container-sm espacio-busqueda">
+    <div class="container-sm espacio-busqueda">
       <app-barra-busqueda></app-barra-busqueda>
 
-  </div>
-  <div id="jumbotron" class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h2><p class="titulo_juego">{{gms.name}}</p></h2>
     </div>
-  </div>
-  <div>
-    <img src="{{ gms.cover.url }}" class="caratula" width="200px">
-  </div>
-  <div class="container-fluid">
-    <div class="cajon1" id="cajon1">
-      <br>
-
-      <h4>Description:</h4>
-      <p>{{ gms.summary }}</p>
-      <br>
-      <div *ngFor="let age of gms.age_ratings">
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2>
+          <p class="titulo_juego">{{gms.name}}</p>
+        </h2>
+      </div>
+    </div>
+    <div>
+      <img src="{{ gms.cover.url }}" class="caratula" width="200px">
+    </div>
+    <div class="container-fluid">
+      <div class="cajon1" id="cajon1">
         <br>
-        <h4>Age Content Description:</h4>
-        <div *ngFor="let cont of age.content_descriptions">
-          {{ cont.description }}
+
+        <h4>Description:</h4>
+        <p>{{ gms.summary }}</p>
+        <br>
+        <div *ngFor="let age of gms.age_ratings">
+          <br>
+          <h4>Age Content Description:</h4>
+          <div *ngFor="let cont of age.content_descriptions">
+            {{ cont.description }}
+          </div>
+        </div>
+        <br>
+        <h4>Genres:</h4>
+        <div *ngFor="let gen of gms.genres">
+          {{ gen.name }}
+        </div>
+        <br>
+        <h4>DLC's:</h4>
+        <div *ngFor="let dlcs of gms.dlcs">
+          {{ dlcs.name }}
+        </div>
+        <br>
+        <h4>Company Names:</h4>
+        <div *ngFor="let comp of gms.involved_companies">
+          {{ comp.company.name }}
+        </div>
+        <br>
+        <h4>Rating:</h4>
+        {{ gms.rating }}
+        <br>
+        <br>
+        <h4>Similar Games:</h4>
+        <div *ngFor="let smgm of gms.similar_games">
+          <div *ngFor="let cvr of gms.similar_games.cover">
+            <img src="{{ cvr.url }}">
+          </div>
+          {{ smgm.name }}
+        </div>
+        <div *ngFor="let scrn of gms.screenshots" class="fototeca">
+          <img src="{{ scrn.url }}">
         </div>
       </div>
-      <br>
-      <h4>Genres:</h4>
-      <div *ngFor="let gen of gms.genres">
-        {{ gen.name }}
-      </div>
-      <br>
-      <h4>DLC's:</h4>
-      <div *ngFor="let dlcs of gms.dlcs">
-        {{ dlcs.name }}
-      </div>
-      <br>
-      <h4>Company Names:</h4>
-      <div *ngFor="let comp of gms.involved_companies">
-        {{ comp.company.name }}
-      </div>
-      <br>
-      <h4>Rating:</h4>
-      {{ gms.rating }}
-      <br>
-      <br>
-      <h4>Similar Games:</h4>
-      <div *ngFor="let smgm of gms.similar_games">
-        <div *ngFor="let cvr of gms.similar_games.cover">
-          <img src="{{ cvr.url }}">
-        </div>
-        {{ smgm.name }}
-      </div>
-      <div *ngFor="let scrn of gms.screenshots" class="fototeca">
-        <img src="{{ scrn.url }}" >
-      </div> 
-  </div>
-  
-  </div>
 
-  <app-footer></app-footer>
+    </div>
 
-<!-- </body>
+    <app-footer></app-footer>
+
+    <!-- </body>
 
 </html> -->
