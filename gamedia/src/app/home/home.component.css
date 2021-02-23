@@ -5,16 +5,11 @@
 }
 
 #padre {
-    position: relative;
+   position: relative;
    width: 800px;
    height: 170px;
    padding-top: 250px;
-  }
-#hijo {
-    position: center; 
-    width: 700px;
-    height: 50px;
-  }
+}
 
 #botonimagen{
     background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
@@ -24,7 +19,7 @@
     width:40px;
     background-position:center;
     border: 0ch;
-  }
+}
 
 .slider {
 	width: 95%;
@@ -59,23 +54,29 @@
 	50% {margin-left: -137%;}
 	100% {margin-left: -137%;}
 }
+
 .carousel {
     width: 100px;
 	height: 50px;
     margin-top: 10px;
 }
+
 #card1 {
     margin: 30px;
 }
+
 #card2 {
     margin: 30px;
 }
+
 #card3 {
     margin: 30px;
 }
+
 .cards {
     padding-left: 50px; 
 }
+
 #jumbotron {
     background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
     background-size: cover;
@@ -83,17 +84,11 @@
     height: 280px;
     padding: 3%;
 }
+
 #jumbotron2 {
     background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
     background-size: cover;
     width: auto;
     height: 280px;
     padding: 3%;
-}
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
 }

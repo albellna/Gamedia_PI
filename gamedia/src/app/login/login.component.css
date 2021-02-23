@@ -32,12 +32,3 @@ form > div > button:hover{
     color: white;
     text-decoration: none;
 }
-
-
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
-}

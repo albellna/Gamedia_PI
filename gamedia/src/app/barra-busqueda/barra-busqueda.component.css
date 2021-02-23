@@ -2,7 +2,7 @@
     position: center; 
     width: 700px;
     height: 50px;
-  }
+}
   
 #botonimagen{
     background-image:url("https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png");
@@ -12,4 +12,4 @@
     width:40px;
     background-position:center;
     border: 0ch;
-  }
+}

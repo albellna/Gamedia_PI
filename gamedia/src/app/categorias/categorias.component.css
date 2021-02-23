@@ -1,22 +1,7 @@
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-
 #padre {
-    padding: 2%;
-    position: relative;
-   width: 600px;
+   position: relative;
+   width: 800px;
    height: 170px;
-  }
-#hijo {
-    position: center; 
-    width: 400px;
-    height: 50px;
   }
   
   #titulo{

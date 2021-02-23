@@ -20,12 +20,3 @@ form > div > button:hover{
 #margenboton{
     margin-left: 20px;
 }
-
-
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
-}
