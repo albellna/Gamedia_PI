@@ -14,9 +14,8 @@ export class ResultadoBusquedaService {
 
   public queryBusqueda(token: string, busqueda: string){
     if (token != null){
-      console.log(token);
       this.cabecera = {headers: new HttpHeaders({'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer '+token})};
-      this.body = 'fields id, name, cover.url; search "'+busqueda+'";';
+      this.body = 'fields id, name, cover.url; search "'+busqueda+'"; limit 500;';
     } else {
       console.log("Error al comprobar el Token. No se ha proporcionado."); 
     }

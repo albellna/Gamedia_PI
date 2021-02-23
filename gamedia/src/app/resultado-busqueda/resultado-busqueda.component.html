@@ -1,4 +1,8 @@
-<div *ngFor="let res of resultados">
-    {{res.name}}
-    <img src="{{ res.cover.url }}" width="200px">
+
+<div *ngIf="resultados!='';else elseBlock">
+    <div *ngFor="let res of resultados">
+        <a href="http://localhost:4200/game/{{res.id}}">{{res.name}}</a>
+        <img src="{{ res.cover.url }}">
+    </div>
 </div>
+<ng-template #elseBlock>No hay resultados.</ng-template>

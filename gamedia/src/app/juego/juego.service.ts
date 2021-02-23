@@ -14,7 +14,6 @@ export class JuegoService {
   
   public consultaJuego(token: string, id: string){
     if (token != null){
-      console.log(token);
       this.cabecera = {headers: new HttpHeaders({'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer '+token})};
       this.body = "fields name, summary, cover.url, screenshots.url, videos.video_id, age_ratings.content_descriptions.description, genres.name, dlcs.name, dlcs, first_release_date, involved_companies.company.name, rating, similar_games.*; where id="+id+";";
     } else {
