@@ -1,3 +1,18 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+.portada_juego {
+/*     margin-left: 800px; */
+margin-bottom: 50px;
+height: 70px;
+width: 70px;
+padding-bottom: 40px;
+}
+.titulo_juego {
+    width: 200px;
+}
+.main {
+     column-count: 4; 
+     padding-top: 80px;
+    padding-left: 150px;
+}
