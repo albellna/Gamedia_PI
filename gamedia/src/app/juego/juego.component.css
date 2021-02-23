@@ -2,7 +2,7 @@ body {
     font-family: 'Comfortaa', cursive;
     color: white;
     background-image:url("https://www.wallpapertip.com/wmimgs/82-822669_4k-resolution-4k-gaming-wallpaper-for-pc.jpg");
-    height: 1705px;
+    height: 1900px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,9 +36,9 @@ hr {
 .boton {
     border-radius: 10px;
 }
-.logo {
+/* .logo {
     float: left;
-}
+} */
 .titulo_juego {
     width: 300px;
     margin-left: -180px;
@@ -48,10 +48,10 @@ hr {
     background: none;
 }
 #cajon1{
-    float:left;
+    /* float:left; */
     margin-bottom: 100px;
     width: 1100px;
-    height: 1100px;
+    height: 1300px;
     padding: 1%;
     margin-left: 5px;
 }
@@ -60,6 +60,17 @@ hr {
     /* background: lightgray; */
     margin-bottom: 100px;
     width: 200px;
-    margin-top: 100px;
-    margin-right: 70px;
+    margin-top: -1100px;
+    margin-right: -300px;
 }
+.logo_gamedia {
+    float: left; 
+}
+
+#color {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer{
+
+}
+
