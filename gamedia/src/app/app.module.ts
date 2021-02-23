@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { BarraBusquedaComponent } from './barra-busqueda/barra-busqueda.component';
 import { ResultadoBusquedaComponent } from './resultado-busqueda/resultado-busqueda.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResultadosPortadaComponent } from './resultados-portada/resultados-portada.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     NuevoUsuarioComponent,
     BarraBusquedaComponent,
     ResultadoBusquedaComponent,
-    FooterComponent
+    FooterComponent,
+    ResultadosPortadaComponent
   ],
   imports: [
     BrowserModule,
