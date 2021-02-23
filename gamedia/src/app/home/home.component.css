@@ -54,23 +54,29 @@
 	50% {margin-left: -137%;}
 	100% {margin-left: -137%;}
 }
+
 .carousel {
     width: 100px;
 	height: 50px;
     margin-top: 10px;
 }
+
 #card1 {
     margin: 30px;
 }
+
 #card2 {
     margin: 30px;
 }
+
 #card3 {
     margin: 30px;
 }
+
 .cards {
     padding-left: 50px; 
 }
+
 #jumbotron {
     background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
     background-size: cover;
@@ -78,17 +84,11 @@
     height: 280px;
     padding: 3%;
 }
+
 #jumbotron2 {
     background-image:url("https://s1.1zoom.me/big3/493/Geometry_586776_3840x2160.jpg");
     background-size: cover;
     width: auto;
     height: 280px;
     padding: 3%;
-}
-.logo {
-    float: left;
-}
-
-#color {
-    background-color: rgba(0, 0, 0, 0.2);
 }
