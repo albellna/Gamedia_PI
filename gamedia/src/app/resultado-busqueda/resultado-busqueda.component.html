@@ -6,11 +6,7 @@
 </head>
 
 <body>
-  <div id="padre" class="container-sm">
-    <form class="form-inline">
-      <app-barra-busqueda></app-barra-busqueda>
-    </form>
-  </div>
+ 
   <div class="main">
     <div *ngIf="resultados!='';else elseBlock">
       <div *ngFor="let res of resultados">
@@ -18,7 +14,9 @@
           <a href="http://localhost:4200/game/{{res.id}}">{{res.name}}</a>
         </div>
         <div class="portada_juego">
-          <img src="{{ res.cover.url }}">
+          <div *ngIf="res.cover != undefined">
+            <img src="{{ res.cover.url }}">
+          </div>
         </div>
       </div>
     </div>

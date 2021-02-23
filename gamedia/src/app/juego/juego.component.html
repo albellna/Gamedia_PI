@@ -8,8 +8,11 @@
 <body>
   <div *ngFor="let gms of juegos">
     <div class="container-sm espacio-busqueda">
-      <app-barra-busqueda></app-barra-busqueda>
-
+      <div id="padre" class="container-sm">
+        <form class="form-inline">
+          <app-barra-busqueda></app-barra-busqueda>
+        </form>
+      </div>
     </div>
     <div id="jumbotron" class="jumbotron jumbotron-fluid">
       <div class="container">
