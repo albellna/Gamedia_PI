@@ -11,18 +11,18 @@ import { NgModule } from '@angular/core';
 })
 
 export class UsuarioService {
-  
+
   usuarioURL = "http://localhost:8000/api/users";
-  
+
 
   constructor(private httpClient: HttpClient) { }
 
-    getAll(): Observable<any> {
-      return this.httpClient.get<any>('/api/users')
-    }
- 
-  public crear(usuario: Usuario){
-    return this.httpClient.post<any>(this.usuarioURL ,usuario);
+  getAll(): Observable<any> {
+    return this.httpClient.get<any>('/api/users')
+  }
+
+  public crear(usuario: Usuario) {
+    return this.httpClient.post<any>(this.usuarioURL, usuario);
   }
 
 }

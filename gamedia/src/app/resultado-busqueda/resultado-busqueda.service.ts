@@ -12,12 +12,12 @@ export class ResultadoBusquedaService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public queryBusqueda(token: string, busqueda: string){
-    if (token != null){
-      this.cabecera = {headers: new HttpHeaders({'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer '+token})};
-      this.body = 'fields id, name, cover.url; search "'+busqueda+'"; limit 500;';
+  public queryBusqueda(token: string, busqueda: string) {
+    if (token != null) {
+      this.cabecera = { headers: new HttpHeaders({ 'Client-ID': '1d3ja1yolgv4sy0cjqxtnnqy4qdfgx', 'Authorization': 'Bearer ' + token }) };
+      this.body = 'fields id, name, cover.url; search "' + busqueda + '"; limit 500;';
     } else {
-      console.log("Error al comprobar el Token. No se ha proporcionado."); 
+      console.log("Error al comprobar el Token. No se ha proporcionado.");
     }
     return this.httpClient.post(this.apiURL, this.body, this.cabecera);
   }

@@ -8,10 +8,6 @@ form > div > button:hover{
     color: #FFFFFF;
 }
 
-#margentitulo{
-    padding-top: 20px;
-}
-
 #margen{
     padding-top: 20px;
 }
@@ -20,15 +16,21 @@ form > div > button:hover{
     text-align: center;
 }
 
-#margenBotonRegister{
-    margin-bottom: 76px;
-}
-
 #margenBotonLogin{
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 #botonRegister > a:hover, a:active, a:link, a:visited {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
+}
+
+input{
+    width: 27%;
+}
+
+.container{
+    margin-left: 41%;
+    margin-bottom: 12%;
+    margin-top: 5%;
 }

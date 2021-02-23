@@ -10,7 +10,7 @@ export class CategoriasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 }

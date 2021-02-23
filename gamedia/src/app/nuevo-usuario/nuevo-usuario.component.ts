@@ -10,7 +10,7 @@ import { UsuarioService } from './usuario.service';
 })
 
 export class NuevoUsuarioComponent implements OnInit {
-  
+
   form: any = {};
   usuario = [] as any;
   creado = false;

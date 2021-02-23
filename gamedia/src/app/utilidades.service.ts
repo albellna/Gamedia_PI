@@ -9,7 +9,7 @@ export class UtilidadesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getToken(){
+  public getToken() {
     return this.httpClient.post(this.tokenURL, "").subscribe((resp: any) => {
       localStorage.setItem('access_token', resp.access_token);
     });

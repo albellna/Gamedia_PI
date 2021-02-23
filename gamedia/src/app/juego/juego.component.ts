@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { JuegoService } from './juego.service';
-import {ActivatedRoute} from '@angular/router';
-import {UtilidadesService} from '../utilidades.service';
+import { ActivatedRoute } from '@angular/router';
+import { UtilidadesService } from '../utilidades.service';
 
 @Component({
   selector: 'app-juego',
@@ -26,12 +26,12 @@ export class JuegoComponent implements OnInit {
   }
 
   public mostrarJuego() {
-    this.juegoService.consultaJuego(this.token,this.id).subscribe(data => {
+    this.juegoService.consultaJuego(this.token, this.id).subscribe(data => {
       this.juegos = data;
     },
-    (err: any) => {
-      console.log(err);
-    }
-  );
+      (err: any) => {
+        console.log(err);
+      }
+    );
   }
 }
