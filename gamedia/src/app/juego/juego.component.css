@@ -55,14 +55,7 @@ hr {
     padding: 1%;
     margin-left: 5px;
 }
-#cajon2{
-    float:right;
-    /* background: lightgray; */
-    margin-bottom: 100px;
-    width: 200px;
-    margin-top: -1100px;
-    margin-right: -300px;
-}
+
 .logo_gamedia {
     float: left; 
 }
@@ -70,7 +63,17 @@ hr {
 #color {
     background-color: rgba(0, 0, 0, 0.2);
 }
-footer{
+/* footer{
 
+} */
+.fototeca {
+    padding: 1%;
+    float: right;
+    padding-top: -300px;
+}
+.caratula {
+    margin-left: 450px;
+    margin-top: -280px;
+    padding-bottom: 2%;
 }
 

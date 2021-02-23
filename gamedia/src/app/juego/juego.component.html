@@ -20,8 +20,16 @@
       <h2><p class="titulo_juego">{{gms.name}}</p></h2>
     </div>
   </div>
+  <div>
+    <img src="{{ gms.cover.url }}" class="caratula" width="200px">
+  </div>
   <div class="container-fluid">
     <div class="cajon1" id="cajon1">
+      <div *ngFor="let scrn of gms.screenshots">
+        <img src="{{ scrn.url }}" class="fototeca">
+      </div> 
+      <br>
+
       <h4>Description:</h4>
       <p>{{ gms.summary }}</p>
       <br>
@@ -52,18 +60,13 @@
       {{ gms.rating }}
       <br>
       <br>
-      <h4>Company Names:</h4>
+      <h4>Similar Games:</h4>
       <div *ngFor="let smgm of gms.similar_games">
         <div *ngFor="let cvr of gms.similar_games.cover">
           <img src="{{ cvr.url }}">
         </div>
         {{ smgm.name }}
       </div>
-      <div class="cajon2" id="cajon2">
-        <img src="{{ gms.cover.url }}" width="200px">
-      </div>
-    </div>
-  
   </div>
   
   </div>
@@ -104,6 +107,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</body>
+<!-- </body>
 
-</html>
+</html> -->
