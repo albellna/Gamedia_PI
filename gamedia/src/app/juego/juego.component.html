@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Game</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,9 +25,6 @@
   </div>
   <div class="container-fluid">
     <div class="cajon1" id="cajon1">
-      <div *ngFor="let scrn of gms.screenshots">
-        <img src="{{ scrn.url }}" class="fototeca">
-      </div> 
       <br>
 
       <h4>Description:</h4>
@@ -67,6 +64,9 @@
         </div>
         {{ smgm.name }}
       </div>
+      <div *ngFor="let scrn of gms.screenshots" class="fototeca">
+        <img src="{{ scrn.url }}" >
+      </div> 
   </div>
   
   </div>

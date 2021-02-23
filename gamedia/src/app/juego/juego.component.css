@@ -68,8 +68,9 @@ hr {
 } */
 .fototeca {
     padding: 1%;
-    float: right;
-    padding-top: -300px;
+    float: left;
+    padding-top: 50px;
+    width: 100px;
 }
 .caratula {
     margin-left: 450px;
