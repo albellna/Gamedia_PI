@@ -29,6 +29,6 @@ form > div > button:hover{
 }
 
 #botonRegister > a:hover, a:active, a:link, a:visited {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
