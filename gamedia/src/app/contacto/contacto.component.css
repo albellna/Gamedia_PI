@@ -8,23 +8,26 @@ form > div > button:hover{
     color: #FFFFFF;
 }
 
-
-#margentitulo{
-    padding-top: 20px;
-}
-
 #margen{
     padding-top: 20px;
 }
 
-#centrar{
-    text-align: center;
+#imgpregunta{
+    width: 50%;
+    height: 30%;
+    margin-left: -8%;
 }
 
-#imgpregunta{
-    width: 500px;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+input{
+    width: 27%;
+}
+
+textarea{
+    width: 27%;
+}
+
+.container{
+    margin-left: 41%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }

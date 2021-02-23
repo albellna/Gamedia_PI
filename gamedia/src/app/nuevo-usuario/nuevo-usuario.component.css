@@ -8,15 +8,16 @@ form > div > button:hover{
     color: #FFFFFF;
 }
 
-#margentitulo{
-    padding-top: 20px;
-}
-
-#margenfooter{
-    padding-top: 20px;
-    padding-bottom: 50px;
-}
-
 #margenboton{
     margin-left: 20px;
+}
+
+input{
+    width: 27%;
+}
+
+.container{
+    margin-left: 41%;
+    margin-bottom: 12%;
+    margin-top: 5%;
 }
